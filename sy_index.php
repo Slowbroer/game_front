@@ -181,64 +181,70 @@
 								</div>
 								<div class="info">
 									<li>
+										<input class="fl" type="hidden" style="margin-top:2px;" name="InterviewCommentInfoSub[appReact]" value="0" />  
 										<span>画面</span>
-										<span class="starwp" id="part1">
-											<span class="star star_on"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-										</span>
+										<div class="starwp" id="part1">
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+										</div>
 									</li>
 									<li>
+										<input class="fl" type="hidden" style="margin-top:2px;" name="InterviewCommentInfoSub[appReact]" value="0" />  
 										<span>角色</span>
-										<span class="starwp" id="part2">
-											<span class="star star_on"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-										</span>
+										<div class="starwp" id="part2">
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+										</div>
 									</li>
 									<li>
+										<input class="fl" type="hidden" style="margin-top:2px;" name="InterviewCommentInfoSub[appReact]" value="0" />  
 										<span>特色</span>
-										<span class="starwp" id="part3">
-											<span class="star star_on"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-										</span>
+										<div class="starwp" id="part3">
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+										</div>
 									</li>
 									<li>
+										<input class="fl" type="hidden" style="margin-top:2px;" name="InterviewCommentInfoSub[appReact]" value="0" />  
 										<span>音效</span>
-										<span class="starwp" id="part4">
-											<span class="star star_on"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-										</span>
+										<div class="starwp" id="part4">
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+										</div>
 									</li>
 									<li>
+										<input class="fl" type="hidden" style="margin-top:2px;" name="InterviewCommentInfoSub[appReact]" value="0" />  
 										<span>任务</span>
-										<span class="starwp" id="part5">
-											<span class="star star_on"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-										</span>
+										<div class="starwp" id="part5">
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+										</div>
 									</li>
 									<li>
+										<input class="fl" type="hidden" style="margin-top:2px;" name="InterviewCommentInfoSub[appReact]" value="0" />  
 										<span>操作</span>
-										<span class="starwp">
-											<span class="star star_on"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-										</span>
+										<div class="starwp">
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+										</div>
 									</li>
 								</div>
 							</div>
@@ -277,7 +283,7 @@
 						<!-- side_box4 end-->
 					</div>
 					<div class="content">
-						<div class="slider_news clearfix">
+						<div class="slider_news clearfix mb">
 							<div class="content_slider">
 								<!--輪播圖 begin-->
 			                    <div class="swiper-container1">
@@ -294,21 +300,39 @@
 			                    <!-- 轮播图 end -->
 							</div>
 							<div class="news bg_type_1">
-								<div class="tab_type_1">
+								<div class="tab_type tab_type_1">
 									<h3 class="tab cur"><a href="javascript:;">综合</a></h3>
 									<h3 class="tab"><a href="javascript:;">公告</a></h3>
 									<h3 class="tab"><a href="javascript:;">活动</a></h3>
 									<h3 class="tab"><a href="javascript:;">新闻</a></h3>
 									<a href="http://mu.niu.xunlei.com/zonghe/1.shtml" target="_blank" class="hd_more">more+</a>
 								</div>
-								<div class="news_tab_con">
-									<div class="cont_item">
+								<div class="news_tab_con tab_con">
+									<div class="cont_item" style="display: block;">
 										<div class="newsListBox">
-											<ul class="news_list" style="display: block;">
+											<ul class="news_list">
 												<li>
 													<span class="com_arrow icon-play_arrow"></span>
 													<span class="cat">公告</span>
-													<span class="txt"><a href="#" target="_blank" title="通知" class="fcy fb">通知通知通知通知通知通知通知通知通知通知</a></span>
+													<span class="txt"><a href="#" target="_blank" title="通知" class="fcy fb">通知通知通知通知通知通知通知通知通知通知通知通知通知通知通知通知通知通知通知</a></span>
+													<span class="date">11-18</span>
+												</li>
+												<li>
+													<span class="com_arrow icon-play_arrow"></span>
+													<span class="cat">活动</span>
+													<span class="txt"><a href="#" target="_blank" title="活动" class="fcy fb">活动活动活动活动活动活动活动活动</a></span>
+													<span class="date">11-18</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="cont_item" style="display: none;">
+										<div class="newsListBox">
+											<ul class="news_list" >
+												<li>
+													<span class="com_arrow icon-play_arrow"></span>
+													<span class="cat">公告</span>
+													<span class="txt"><a href="#" target="_blank" title="公告" class="fcy fb">公告公告公告公告公告公告公告公告公告</a></span>
 													<span class="date">11-18</span>
 												</li>
 											</ul>
@@ -321,32 +345,32 @@
 							<ul class="clearfix">
 								<li>
 									<a href="#" target="_blank" class="niuxReportLink" rdata="g3_indexad:item1">
-										<img src="http://i2.webgame.kanimg.com/20150126/1422237656845.jpg" alt="" width="180" height="118">
+										<img src="img/no21.jpg" alt="" width="210" height="154">
 										<span class="btn">go></span>
 									</a>
 								</li>
 								<li>
 									<a href="#" target="_blank" class="niuxReportLink" rdata="g3_indexad:item1">
-										<img src="http://i2.webgame.kanimg.com/20150126/1422237656845.jpg" alt="" width="180" height="118">
+										<img src="img/no31.jpg" alt="" width="210" height="154">
 										<span class="btn">go></span>
 									</a>
 								</li>
 								<li>
 									<a href="#" target="_blank" class="niuxReportLink" rdata="g3_indexad:item1">
-										<img src="http://i2.webgame.kanimg.com/20150126/1422237656845.jpg" alt="" width="180" height="118">
+										<img src="img/no41.jpg" alt="" width="210" height="154">
 										<span class="btn">go></span>
 									</a>
 								</li>
 								<li>
 									<a href="#" target="_blank" class="niuxReportLink" rdata="g3_indexad:item1">
-										<img src="http://i2.webgame.kanimg.com/20150126/1422237656845.jpg" alt="" width="180" height="118">
+										<img src="img/no51.jpg" alt="" width="210" height="154">
 										<span class="btn">go></span>
 									</a>
 								</li>
 							</ul>
 						</div>
 						<div class="video_partner bg_type_2 mb">
-							<div class="tab_type_2">
+							<div class="tab_type tab_type_2">
 								<h3 class="tab"><a>游戏视频</a></h3>
 								<h3 class="tab cur"><a>伙伴展示</a></h3>
 							</div>
@@ -411,19 +435,42 @@
 									<h6>游戏资料</h6>
 								</div>
 								<div class="datalink">
-									
+									<div class="data_item">
+										<div class="dataListBox">
+											<ul class="data_list">
+												<li>
+													<span class="com_arrow icon-play_arrow"></span>
+													<span class="cat">公告</span>
+													<span class="txt"><a href="#" target="_blank" title="通知" class="fcy fb">通知通知通知通知通知通知通知通知通知通知通知通知通知通知通知通知通知通知通知</a></span>
+													<span class="date">11-18</span>
+												</li>
+												<li>
+													<span class="com_arrow icon-play_arrow"></span>
+													<span class="cat">活动</span>
+													<span class="txt"><a href="#" target="_blank" title="活动" class="fcy fb">活动活动活动活动活动活动活动活动</a></span>
+													<span class="date">11-18</span>
+												</li>
+											</ul>
+										</div>
 								</div>
 							</div>
 						</div>
 						<div class="gameimg bg_type_2">
-							<div class="tab_type_2">
-								<h3 class="tab"><a>游戏原画</a></h3>
-								<h3 class="tab cur"><a>游戏截图</a></h3>
+							<div class="tab_type tab_type_2">
+								<h3 class="tab cur"><a>游戏原画</a></h3>
+								<h3 class="tab "><a>游戏截图</a></h3>
 							</div>
 							<div class="tab_con">
+								<div class="cont_item" style="display: block;">
 									<div class="img_container">
 										<img src="http://i1.webgame.kanimg.com/20150121/1421810419823.jpg" _bsrc="http://i0.webgame.kanimg.com/20150121/1421810414531.jpg" idx="0" alt="" width="168" height="110">
 									</div>	
+								</div>
+								<div class="cont_item" style="display: none;">
+									<div class="img_container">
+										<img src="img/no21.jpg" _bsrc="http://i0.webgame.kanimg.com/20150121/1421810414531.jpg" idx="0" alt="" width="168" height="110">
+									</div>	
+								</div>
 							</div>
 						</div>
 					</div>

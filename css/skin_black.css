@@ -25,7 +25,7 @@ ul, li, ol {
 	background: url(../img/bg4.jpg) no-repeat top center;
 }
 .layout{
-	width: 1070px;
+	width: 1200px;
 	margin: 0 auto;
 	position: relative;
 	text-align: center;
@@ -262,6 +262,9 @@ ul, li, ol {
 .game_score .info span {
     margin: 0 6px 0 0;
 }
+.game_score .info div{
+    display: inline-block;
+}
 .custom_server {
     position: relative;
     height: 75px;
@@ -282,13 +285,15 @@ ul, li, ol {
     padding: 10px 0 0 100px;
     line-height: 21px;
 }
-.star {
+.star,.star_on{
     display: inline-block;
     width: 13px;
     height: 12px;
     background: url(../img/spr_side.png);
-    background-position: -38px -38px;
     overflow: hidden;
+}
+.star{
+    background-position: -38px -38px;
 }
 .star_on {
     background-position: -52px -38px;
@@ -297,7 +302,7 @@ ul, li, ol {
 /* content */
 .content {
     float: right;
-    width: 746px;
+    width: 866px;
     
 }
 .content_slider {
@@ -310,7 +315,7 @@ ul, li, ol {
 }
 .news {
     float: right;
-    width: 368px;
+    width: 488px;
     height: 270px;
 }
 .tab_type_1 {
@@ -406,8 +411,6 @@ a.hd_more {
 }
 .game_link li a {
     display: block;
-    width: 180px;
-    height: 118px;
     position: relative;
     overflow: hidden;
 }
@@ -538,7 +541,7 @@ a.hd_more {
     height: 450px;
 }
 .img_container{
-    padding: 22px;
+    padding: 13px;
 }
 footer{
     margin-top: 50px;
