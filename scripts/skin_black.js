@@ -82,15 +82,13 @@ $(function(){
 /*tab切换*/
 $(".tab").mouseover(function(){
 	$(this).addClass('cur');
-	$(this).prevAll().removeClass("cur");
-	$(this).nextAll().removeClass("cur");
+	$(this).siblings().removeClass("cur");
 	var tab_num = $(this).index();
 	var cont_item = $(this).parent(".tab_type").siblings('.tab_con').children('.cont_item');
 	for(var i =0;i<cont_item.length;i++){
 		if (tab_num == i) {
 			cont_item.eq(i).show();
-			cont_item.eq(i).prevAll().hide();
-			cont_item.eq(i).nextAll().hide();
+			cont_item.eq(i).siblings().hide();
 		};
 	}
 })

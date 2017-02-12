@@ -32,7 +32,7 @@
 			                </a> 
 			            </li>
 			            <li style="margin-right:125px;">
-			                <a href="reg.php">
+			                <a href="news.php">
 			                    <h4>游戏公告</h4>
 			                </a> 
 			            </li>
@@ -127,12 +127,6 @@
 								<a href="#" title="" target="_blank" class="btn_register niuxReportLink" rdata="g3_side:reg">
 									<span class="icon-gavel"></span>
 									游戏充值
-								</a>
-							</div>
-							<div class="btnwrap">
-								<a href="#" title="" target="_blank" class="btn_register niuxReportLink" rdata="g3_side:reg">
-									<span class="icon-gavel"></span>
-									账号管理
 								</a>
 							</div>
 						</div>
@@ -440,18 +434,19 @@
 											<ul class="data_list">
 												<li>
 													<span class="com_arrow icon-play_arrow"></span>
-													<span class="cat">公告</span>
+													<span class="cat">公告公告</span>
 													<span class="txt"><a href="#" target="_blank" title="通知" class="fcy fb">通知通知通知通知通知通知通知通知通知通知通知通知通知通知通知通知通知通知通知</a></span>
 													<span class="date">11-18</span>
 												</li>
 												<li>
 													<span class="com_arrow icon-play_arrow"></span>
-													<span class="cat">活动</span>
+													<span class="cat">活动公告</span>
 													<span class="txt"><a href="#" target="_blank" title="活动" class="fcy fb">活动活动活动活动活动活动活动活动</a></span>
 													<span class="date">11-18</span>
 												</li>
 											</ul>
 										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -473,7 +468,6 @@
 								</div>
 							</div>
 						</div>
-					</div>
 				</div>
 			</div>
 		</div>

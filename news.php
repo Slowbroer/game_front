@@ -4,13 +4,15 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>mu奇迹首页</title>
+    <title>mu新闻公告</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <!--引入reset.css-->
     <link rel="stylesheet" href="css/reset.css">
-    <!-- 引入sign.css -->
-    <link type="text/css" rel="stylesheet" href="css/new.css">
+    <!-- 引入news.css -->
+    <link type="text/css" rel="stylesheet" href="css/news.css">
+    <!-- 引入swiper.css -->
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css">
 </head>
 <body>
 	<div class="wrap">
@@ -64,32 +66,32 @@
 						</div>
 						<!-- login begin -->
 						<div class="userwrap side_box bg_type_1">
-							<div class="input_area" id="account_login">
-								<form action="" class="form_logoin">
-									<p class="in_box_cite color_red" style="display:block;" id="al_warn">错误信息</p>
+							<div class="input_area" id="account_login_before">
+								<form action="" class="form_login">
+									<p class="in_box_cite color_red errorplacement" style="display:block;" id="al_warn"></p>
 									<div class="container clearfix">
 										<div class="in_box_container">
 										<div class="in_box">
-											<input type="text" value="" class="in_txt" id="al_u" placeholder="账号">
+											<input type="text" value="" class="in_txt" id="al_u" name="username" maxlength="20" placeholder="账号">
 										</div>
 										<div class="in_box password">
-											<input type="password" value="" class="in_txt" id="al_p" placeholder="密码">
+											<input type="password" value="" class="in_txt" id="al_p" name="password" maxlength="6" placeholder="密码">
 										</div>
 									</div>
 									<div class="pay_btn">
-										<a id="al_submit" class="" title="登录" href="javascript:void(0)">登录</a>
+										<input type="submit" id="al_submit" class="" value="登录" href="javascript:void(0)">
 									</div>
 									</div>
 									
-									<div class=" in_boxa" style="display:block;" id="al_c_div">
+									<div class=" in_boxa code" style="display:none;" id="al_c_div">
 										<div class="in_box in_box2">
-											<input type="text" value="" ype="text" value="" class="in_txt" id="al_c" placeholder="验证码">
+											<input type="text"  class="in_txt" id="al_c" placeholder="验证码">
 										</div>
 										<div href="javascript:void(0)" title="验证码" class="verify_img">
 											<img id="al_c_img" height="30" width="60" src="" alt="">
 										</div>
 									</div>
-									<div class="in_boxa clearfix" style="display:none;">
+									<div class="in_boxa autologin clearfix" style="display:block;">
 										<label id="al_remember_div" for="al_remember" class="cbox">
 											<input type="checkbox" id="al_remember" name="" class="chk" checked="checked">下次自动登录
 										</label>
@@ -97,11 +99,23 @@
 									</div>
 								</form>
 							</div>
-							<div class="btnwrap">
-								<a href="#" title="" target="_blank" class="btn_register niuxReportLink" rdata="g3_side:reg">
-									<span class="icon-gavel"></span>
-									注册帐号
-								</a>
+							<div id="acount_login_after" style="display:none">
+								<p class="account_name">
+									<span>当前账号</span>
+									<span class="account_name_txt">青青</span>
+								</p>
+								<p class="state">
+									<span>当前状态：</span>
+									<span class="state_txt">账号正常</span>
+								</p>
+								<p class="point">
+									<span>积分：</span>
+									<span class="point_txt">0</span>
+								</p>
+								<p class="rechange">
+									<span>累计充值：</span>
+									<span class="rechange_txt">0</span>
+								</p>
 							</div>
 							<div class="btnwrap">
 								<a href="#" title="" target="_blank" class="btn_register niuxReportLink" rdata="g3_side:reg">
@@ -112,13 +126,13 @@
 							<div class="btnwrap">
 								<a href="#" title="" target="_blank" class="btn_register niuxReportLink" rdata="g3_side:reg">
 									<span class="icon-gavel"></span>
-									注册帐号
+									游戏充值
 								</a>
 							</div>
 							<div class="btnwrap">
 								<a href="#" title="" target="_blank" class="btn_register niuxReportLink" rdata="g3_side:reg">
 									<span class="icon-gavel"></span>
-									注册帐号
+									账号管理
 								</a>
 							</div>
 						</div>
@@ -143,9 +157,14 @@
 								<h6>活动时间</h6>
 							</div>
 							<div class="quick clear">
-								<a href="/Pwd" class="btn_quick fastEnterGameLink" tid="side">修改密码</a>
-								<a href="/top" class="btn_quick fastEnterGameLink" tid="side">等级排行</a>
-								<a href="/top/zm.asp" class="btn_quick fastEnterGameLink" tid="side">战盟排行</a>
+								<p class="part">
+									<span class="part_name">距离血色城堡开放时间还有：</span>
+									<span id="time1"></span>
+								</p>
+								<p class="part">
+									<span class="part_name">距离血色城堡开放时间还有：</span>
+									<span id="time2"></span>
+								</p>
 							</div>
 						</div>
 						<!-- side_box2 end-->
@@ -162,64 +181,70 @@
 								</div>
 								<div class="info">
 									<li>
+										<input class="fl" type="hidden" style="margin-top:2px;" name="InterviewCommentInfoSub[appReact]" value="0" />  
 										<span>画面</span>
-										<span class="starwp" id="part1">
-											<span class="star star_on"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-										</span>
+										<div class="starwp" id="part1">
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+										</div>
 									</li>
 									<li>
+										<input class="fl" type="hidden" style="margin-top:2px;" name="InterviewCommentInfoSub[appReact]" value="0" />  
 										<span>角色</span>
-										<span class="starwp" id="part2">
-											<span class="star star_on"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-										</span>
+										<div class="starwp" id="part2">
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+										</div>
 									</li>
 									<li>
+										<input class="fl" type="hidden" style="margin-top:2px;" name="InterviewCommentInfoSub[appReact]" value="0" />  
 										<span>特色</span>
-										<span class="starwp" id="part3">
-											<span class="star star_on"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-										</span>
+										<div class="starwp" id="part3">
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+										</div>
 									</li>
 									<li>
+										<input class="fl" type="hidden" style="margin-top:2px;" name="InterviewCommentInfoSub[appReact]" value="0" />  
 										<span>音效</span>
-										<span class="starwp" id="part4">
-											<span class="star star_on"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-										</span>
+										<div class="starwp" id="part4">
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+										</div>
 									</li>
 									<li>
+										<input class="fl" type="hidden" style="margin-top:2px;" name="InterviewCommentInfoSub[appReact]" value="0" />  
 										<span>任务</span>
-										<span class="starwp" id="part5">
-											<span class="star star_on"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-										</span>
+										<div class="starwp" id="part5">
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+										</div>
 									</li>
 									<li>
+										<input class="fl" type="hidden" style="margin-top:2px;" name="InterviewCommentInfoSub[appReact]" value="0" />  
 										<span>操作</span>
-										<span class="starwp">
-											<span class="star star_on"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-											<span class="star"></span>
-										</span>
+										<div class="starwp">
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+											<span class="star" star=""></span>
+										</div>
 									</li>
 								</div>
 							</div>
@@ -258,9 +283,51 @@
 						<!-- side_box4 end-->
 					</div>
 					<div class="content">
-						
+						<div class="page_news_wrap">
+							<div class="tab_type_2 tab_page">
+							    <h3 class="tab cur"><a href="#">综合</a></h3>
+							    <h3 class="tab"><a href="#">公告</a></h3>
+							    <h3 class="tab"><a href="#">活动</a></h3>
+							    <div class="cur_pos">
+							      当前位置：<a href="#">奇迹归来</a> &gt; <span class="cur">综合</span>
+							    </div>
+							</div>
+							<div class="page_news_list_wrap">
+								<ul class="page_news_list">
+									<li>
+									    <span class="com_arrow icon-play_arrow"></span>
+									    <div class="news_con">
+									      <a href="#" title="通知通知通知通知通知" target="_blank" class="fcy fb">[公告] 通知通知通知通知通知通知通知通知通知通知通知</a>
+									    </div>
+									    <span class="date">2015-11-18</span>
+									</li>
+									<li>
+									    <span class="com_arrow icon-play_arrow"></span>
+									    <div class="news_con">
+									      <a href="#" title="通知通知通知通知通知" target="_blank" class="fcy fb">[公告] 通知通知通知通知通知通知通知通知通知通知通知</a>
+									    </div>
+									    <span class="date">2015-11-18</span>
+									</li>
+									<li>
+									    <span class="com_arrow icon-play_arrow"></span>
+									    <div class="news_con">
+									      <a href="#" title="通知通知通知通知通知" target="_blank" class="fcy fb">[公告] 通知通知通知通知通知通知通知通知通知通知通知</a>
+									    </div>
+									    <span class="date">2015-11-18</span>
+									</li>
+								</ul>
+							</div>
+							<div class="page">
+							    <p>
+							        <a class="txtlink dis">&lt;&lt;上一页</a>
+							        <a class="cur">1</a><a href="#">2</a>
+							        <a href="#">3</a>
+							        <a href="#">4</a>
+							        <a href="#" title="" class="txtlink">下一页&gt;&gt;</a>
+							    </p>
+							</div>
+						</div>
 					</div>
-				</div>
 			</div>
 		</div>
 		<footer>
@@ -290,26 +357,43 @@
     <script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
     <!-- 引入jquery.validate -->
     <script type="text/javascript" src="scripts/jquery.validate.js"></script>
-    <!-- 引入swiper.js -->
-    <script type="text/javascript" src="scripts/swiper-3.3.1.jquery.min.js"></script>
-    <script>        
-      var mySwiper1 = new Swiper ('.swiper-container1', {
-        direction: 'horizontal',
-        loop: true,
-        paginationClickable :true,
-        pagination: '.swiper-pagination'
-      })   
-      var mySwiper2 = new Swiper ('.swiper-container2', {
-        direction: 'horizontal',
-        loop: true,
-        paginationClickable :true,
-        pagination: '.swiper-pagination',
-        paginationBulletRender: function (swiper, index, className) {
-		      return '<span class="' + className + '">' + (index + 1) + '</span>';
-	  	}
-      })       
+    <!-- 引入news.js -->
+    <script type="text/javascript" src="scripts/news.js"></script>
+    <!-- 引入jquery.validate.min.js -->
+    <script type="text/javascript" src="scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$(".form_login").validate({
+    			rules:{
+					username: {
+			        	required: true,
+			        	maxlength: 20
+			        },
+				    password: {
+				        required: true,
+				        maxlength: 6
+				    }
+    			},
+    			messages:{
+					username: {
+				        required: "请输入用户名",
+				        minlength: "用户名必需由两个字母组成"
+		      		},
+				    password: {
+				        required: "请输入密码",
+				        minlength: "密码长度不能小于 5 个字母"
+				    }
+    			},
+    			errorPlacement: function(error, element) {  
+    				/*错误信息位置*/
+				    error.appendTo(element.parents(".form_login").children('.errorplacement'));  
+				},
+				submitHandler: function(form) {
+
+			      $(form).ajaxSubmit();     
+			    }  
+    		})
+    	})
     </script>
-    <!-- 引入skin_black.js -->
-    <script type="text/javascript" src="scripts/skin_black.js"></script>
 </body>
 </html>

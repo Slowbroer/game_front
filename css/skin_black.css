@@ -302,8 +302,7 @@ ul, li, ol {
 /* content */
 .content {
     float: right;
-    width: 866px;
-    
+    width: 866px;  
 }
 .content_slider {
     float: left;
@@ -376,14 +375,14 @@ a.hd_more {
     background-position: -21px -95px;
 }
 
-.news_list .cat {
+.cat {
     position: absolute;
     left: 17px;
     top: 0;
     color: #6A696A;
 }
 
-.news_list .txt {
+.txt {
     display: block;
     width: 234px;
     white-space: nowrap;
@@ -393,7 +392,7 @@ a.hd_more {
     text-align: left;
 }
 
-.news_list .date {
+.date {
     position: absolute;
     top: 1px;
     right: 0;
@@ -539,6 +538,31 @@ a.hd_more {
 }
 .gamedata{
     height: 450px;
+}
+.datalink{
+    padding: 20px;
+}
+.datalink li{
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px 0;
+}
+.datalink li .com_arrow{
+    left: 0;
+    top: 0px;
+    height: 30px;
+    line-height: 30px;
+}
+.datalink li .cat{
+    background: #1C1D1E;
+    color: #fff;
+    width: 70px;
+    margin-left: 5px;
+}
+.datalink li .txt{
+    width: 734px;
+    margin-left: 100px;
 }
 .img_container{
     padding: 13px;
