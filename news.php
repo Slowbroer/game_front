@@ -9,8 +9,8 @@
     <meta name="description" content="">
     <!--引入reset.css-->
     <link rel="stylesheet" href="css/reset.css">
-    <!-- 引入news.css -->
-    <link type="text/css" rel="stylesheet" href="css/news.css">
+    <!-- 引入common.css -->
+    <link type="text/css" rel="stylesheet" href="css/common.css">
     <!-- 引入swiper.css -->
     <link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css">
 </head>
@@ -27,17 +27,17 @@
 			                </a> 
 			            </li>
 			            <li>
-			                <a href="reg.php">
+			                <a href="manage.php">
 			                    <h4>账号管理</h4>
 			                </a> 
 			            </li>
 			            <li style="margin-right:125px;">
-			                <a href="reg.php">
+			                <a href="news.php">
 			                    <h4>游戏公告</h4>
 			                </a> 
 			            </li>
 			            <li>
-			                <a href="login.php">
+			                <a href="rank.php">
 			                    <h4>玩家排名</h4>
 			                </a> 
 			            </li>
@@ -357,8 +357,8 @@
     <script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
     <!-- 引入jquery.validate -->
     <script type="text/javascript" src="scripts/jquery.validate.js"></script>
-    <!-- 引入news.js -->
-    <script type="text/javascript" src="scripts/news.js"></script>
+    <!-- 引入common.js -->
+    <script type="text/javascript" src="scripts/common.js"></script>
     <!-- 引入jquery.validate.min.js -->
     <script type="text/javascript" src="scripts/jquery.validate.min.js"></script>
     <script type="text/javascript">

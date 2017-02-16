@@ -27,7 +27,7 @@
 			                </a> 
 			            </li>
 			            <li>
-			                <a href="reg.php">
+			                <a href="manage.php">
 			                    <h4>账号管理</h4>
 			                </a> 
 			            </li>
@@ -37,7 +37,7 @@
 			                </a> 
 			            </li>
 			            <li>
-			                <a href="login.php">
+			                <a href="rank.php">
 			                    <h4>玩家排名</h4>
 			                </a> 
 			            </li>

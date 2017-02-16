@@ -84,7 +84,7 @@ $(".tab").mouseover(function(){
 	$(this).addClass('cur');
 	$(this).siblings().removeClass("cur");
 	var tab_num = $(this).index();
-	var cont_item = $(this).parent(".tab_type").siblings('.tab_con').children('.cont_item');
+	var cont_item = $(this).parent(".tab_type_2").siblings('.tab_con').children('.cont_item');
 	for(var i =0;i<cont_item.length;i++){
 		if (tab_num == i) {
 			cont_item.eq(i).show();
